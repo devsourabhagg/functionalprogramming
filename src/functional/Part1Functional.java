@@ -1,7 +1,8 @@
-import java.util.List;
-import java.util.stream.Collectors;
+package functional;
 
-public class Part2Functional {
+import java.util.List;
+
+public class Part1Functional {
 
 
     public static void main(String args[]){
@@ -42,10 +43,10 @@ public class Part2Functional {
 
         //4th way -> Method Reference
         System.out.println("Fourth way");
-        integers.forEach(Part2Functional::print);
+        integers.forEach(Part1Functional::print);
 
         System.out.println("Fifth way");
-        integers.stream().forEach(Part2Functional::print);
+        integers.stream().forEach(Part1Functional::print);
 
         System.out.println("Sixth way");
         integers.stream().forEach(System.out::println);
@@ -79,7 +80,7 @@ public class Part2Functional {
         //what to do ?
         //filter the even numbers and print them out
         integers.stream()
-                .filter(Part2Functional::isEven)
+                .filter(Part1Functional::isEven)
                 .forEach(System.out::println);
 
 
